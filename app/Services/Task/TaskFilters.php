@@ -31,7 +31,7 @@ class TaskFilters
     private function filterFinishedAt(string $value): void
     {
         if ($value) {
-            $this->query->whereDate('finished_at', $value);
+            $this->query->where('finished_at', $value);
         }
     }
 }
